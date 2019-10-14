@@ -9,14 +9,16 @@
     <title>Chocolate Pizza</title>
 </head>
 <body>
-<nav>
-     <aside>
-        <img src="./lab-assets/logo.png" alt="logo">
-     </aside>
-    <h2>Delicious</h2>
-    <h1>The Best Food Blog On The Web</h1>
+<nav> 
     <div>
-        <a href="http.www.facebook.com"><img src="./lab-assets/fb-icon.png" alt="FaceBook Link"></a>
+        <header class="logo-area">
+        <img id="first-logo" src="./lab-assets/logo.png" alt="logo">
+                <h2 class="logo-text">Delicious</h2>
+                <h1 class="logo-text">The Best Food Blog On The Web</h1>
+        </header>
+    </div>
+    <div class="header-link-list">
+        <a href="http.www.facebook.com"><img src="./lab-assets/fb-icon.png" alt="FaceBook ßink"></a>
         <a href="http.www.twitter.com"><img src="./lab-assets/twit-icon.png" alt="twitter"></a>
         <a href="http.www.google-plus.com"><img src="./lab-assets/" alt=""></a>
         <a href="http.www.instagram.com"><img src="./lab-assets/insta-icon.png" alt=""></a>
@@ -30,13 +32,13 @@
     <!-- insert line between nav bar and header?? -->
 </div>
 </section>
-    <header>
+    <header class="article-header">
         <h2>Chocolate Pizza</h2>
-        <h4>POSTED ON 15 DEC 2013 / DESSERTS</h4>
-        <aside>
+        <aside id="print-image-header">
             <a href="print.com"><img src="./lab-assets/print-icon.png" alt="print"></a>
         </aside>
     </header>
+    <h4 id="date">POSTED ON 15 DEC 2013 / DESSERTS</h4>
  <section>
     <img id="hero-image" src="./lab-assets/choco-pizza.png" alt="Chocolate-Pizza">
     <p>
@@ -53,14 +55,18 @@
     </p>
 </section>
 <article>
-    <img src="./lab-assets/list-bg.png" alt="ingredients background">
-    <ul>
+    <div class="container">
+    <img id="list-image" src="./lab-assets/list-bg.png" alt="ingredients background">
+    <div>
+    <ul class="ing-list">
         <li><input type="checkbox"> 1&frac12; cups milk </li>
         <li><input type="checkbox"> &frac12; cup mascarpone</li>
         <li><input type="checkbox"> &frac12; tsp pink salt </li>
         <li><input type="checkbox"> 1lb Block Mission Figs</li>
         <li><input type="checkbox"> &frac12; cup brown sugar</li>
         <li><input type="checkbox"> 2 tbsp water</li>
+    </ul>
+     <ul class="ing-list">
         <li><input type="checkbox"> 1&frac12; cup heavy cream</li>
         <li><input type="checkbox"> 1/3 cup granulated sugar</li>
         <li><input type="checkbox"> 2 egg yolks</li>
@@ -68,12 +74,21 @@
         <li><input type="checkbox"> 2 tbsp butter</li>
         <li><input type="checkbox"> 1 cup honey roasted pecans, chopped</li>
     </ul>
+</div>
 </article>
-    
-    
-
-
-
+</div>
+<div>
+    <h2>Vanessa Stevenson</h2>
+    <p>Food Enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+    <aside>
+        <button>SHARE RECIPE</button>
+    </aside>
+</div>
+<footer>
+     <img src="./lab-assets/small-logo.png" alt="logo">
+    <h5>Declicious &copy; 2013 All rights Reserved.</h5>
+    <h5>Proudly published with Ghost.</h5>
+</footer>
     <script src="app.js"></script>
 </body>
 
